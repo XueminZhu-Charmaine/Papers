@@ -1,4 +1,4 @@
-# TokenLearner:What Can 8 Learned Tokens Do for Images andVideos?
+# TokenLearner:What Can 8 Learned Tokens Do for Images and Videos?
 ## Abstract:
 1. A new visure representation learning using a small number of adaptively learned tokens, can be used to image/video understanding tasks.
 2. Code: https://github.com/google-research/scenic/tree/main/scenic/projects/token_learner
