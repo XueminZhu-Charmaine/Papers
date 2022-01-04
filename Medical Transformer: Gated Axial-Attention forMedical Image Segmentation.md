@@ -1,6 +1,6 @@
 # Medical Transformer: Gated Axial-Attention forMedical Image Segmentation
 ## Abstract
-1. Lack of understanding of long-rand dependencies in the images due to _inductive bias_.\
+1. Lack of understanding of long-rand dependencies in the images due to _inductive bias_.
 
 
 
