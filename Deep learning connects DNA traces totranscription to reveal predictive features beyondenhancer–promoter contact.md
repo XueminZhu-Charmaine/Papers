@@ -1,4 +1,8 @@
 # Deep learning connects DNA traces totranscription to reveal predictive features beyondenhancer–promoter contact
+## Probable improvements:
+1. As it stated in the paper, deep learning can highlight features in the data previously unappreciated where we could apply it to the immune systems and disease models.
+2. 
+
 ## Abstract
 Problem and Objectives:
 1. Super-resolution microscopy made measuring chromatin 3D structure possible but hard to employ it using computational methods.
