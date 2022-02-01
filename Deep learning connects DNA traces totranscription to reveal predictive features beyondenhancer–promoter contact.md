@@ -1,7 +1,7 @@
 # Deep learning connects DNA traces totranscription to reveal predictive features beyondenhancer–promoter contact
 ## Probable improvements:
 1. As it stated in the paper, deep learning can highlight features in the data previously unappreciated where we could apply it to the immune systems and disease models.
-2. 
+2. Model improvements:
 
 ## Abstract
 Problem and Objectives:
