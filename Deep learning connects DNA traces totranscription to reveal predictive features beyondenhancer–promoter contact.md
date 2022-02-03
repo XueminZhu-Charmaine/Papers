@@ -1,6 +1,11 @@
 # Deep learning connects DNA traces totranscription to reveal predictive features beyondenhancer–promoter contact
 ## Paper link: https://www.nature.com/articles/s41467-021-23831-4
 
+## Probable improvements:
+1. As it stated in the paper, deep learning can highlight features in the data previously unappreciated where we could apply it to the immune systems and disease models.
+2. Model improvements - input: In this paper, the author use relative distances and linear interpolation to represent the (x, y, z) which actually lose a lot of information. The future improvement could consider use graph thoery to presente the DNA structure which turn this question into a NLP problem.
+3. Model improvents: If we transfer it to a problem similar to NLP, we could consider replace the curren CNN model with LSTM or other advanced NLP models. I believe we can improve the performances by doing this.
+
 ## Abstract
 Problem and Objectives:
 1. Super-resolution microscopy made measuring chromatin 3D structure possible but hard to employ it using computational methods.
@@ -25,7 +30,7 @@ Conclusions:
 4. Dataset: tis data set contained over 50,000 cells, in each of which the 3D structure of BX-C gene cluster was imaged with ORCA and nascent RNA expression for each of the three hox genes measured with fluorescent in situ hybridization targeting ribonucleic acid molecules (RNA FISH).
 
 ## Methods
-1. First remove features that reflected technical rather than biological differences in the chromatin structure data. For example, the (x,y,z) coordinates measured for the polymer are recorded relative to the microscope stage axis. Viewing the same structure from two different angles results in different (x,y,z) values, which do not reflect a biological difference in structure. We addressed this challenge by calculating the relative distances between all 52 positions along with the polymer, represented as a 52 × 52 matrix, thereby preserving all structural features except the experimental viewing angle. Missing data values were estimated by linear interpolation between the adjacent (x,y,z) coordinates. All distances were then normalized relative to the average inter- position distances to accentuate differences. To facilitate deep learning, we classified nascent RNA expression into ON or OFF binary classes.
+1. First remove features that reflected technical rather than biological differences in the chromatin structure data. For example, the (x,y,z) coordinates measured for the polymer are recorded relative to the microscope stage axis. Viewing the same structure from two different angles results in different (x,y,z) values, which do not reflect a biological difference in structure. We addressed this challenge by calculating the relative distances between all 52 positions along with the polymer, represented as a 52 × 52 matrix, thereby preserving all structural features except the experimental viewing angle. Missing data values were estimated by linear interpolation between the adjacent (x,y,z) coordinates. All distances were then normalized relative to the average interposition distances to accentuate differences. To facilitate deep learning, we classified nascent RNA expression into ON or OFF binary classes.
 ![image](https://github.com/XueminZhu-Charmaine/Papers/blob/main/images/DeepDNA_fig1.png)
 2. 2D CNNs start with an input data matrix (image), which is passed through a series of filters (convolutions). The transformed data are then passed through a data integration layer or a pooling layer. CNNs are often built with pairs of convolutional (filter) layers and pooling layers. The output of one or more rounds of convolu- tional followed by pooling layers is then flattened by being fed into a series of dense neural network layers, which output a final prediction. The network is optimized to maximum performance through iterative training rounds, where predictions are compared with the ground truth training labels, generating a loss measurement between the performance of the CNN and the maximal possible performance. Using this loss measurement, weights of the network are optimized through a method known as back propagation. This iterative process is repeated until the loss stabilizes.
 
@@ -36,7 +41,4 @@ Conclusions:
 ![image](https://github.com/XueminZhu-Charmaine/Papers/blob/main/images/DeepDNA_fig5.png)
 ![image](https://github.com/XueminZhu-Charmaine/Papers/blob/main/images/DeepDNA_fig6.png)
 
-## Probable improvements:
-1. As it stated in the paper, deep learning can highlight features in the data previously unappreciated where we could apply it to the immune systems and disease models.
-2. Model improvements:
 
